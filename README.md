@@ -26,7 +26,7 @@ It covers everything from variables to OOP to advanced concepts — all in inter
 | # | Library | Status | Topics |
 |---|---------|--------|--------|
 | 1 | 🔢 **NumPy** | ✅ Done | Arrays, indexing, broadcasting, statistics, linear algebra |
-| 2 | 🐼 **Pandas** | 🔜 Coming Soon | Series, DataFrame, groupby, merge, data cleaning |
+| 2 | 🐼 **Pandas** |✅ Done | Series, DataFrame, groupby, merge, data cleaning |
 | 3 | 📈 **Matplotlib** | 🔜 Coming Soon | Line, bar, scatter, subplots, customisation |
 | 4 | 🎨 **Seaborn** | 🔜 Coming Soon | Statistical plots, heatmaps, pair plots |
 | 5 | 🔍 **EDA Project** | 🔜 Coming Soon | Full exploratory data analysis on a real dataset |
@@ -39,7 +39,7 @@ It covers everything from variables to OOP to advanced concepts — all in inter
 Data-Analysis-with-Python/
 │
 ├── 1-NumPy/                           ✅ Completed
-├── 2-Pandas/                          🔜 Coming Soon
+├── 2-Pandas/                          ✅ Completed
 ├── 3-Matplotlib/                      🔜 Coming Soon
 ├── 4-Seaborn/                         🔜 Coming Soon
 └── 5-EDA-Project/                     🔜 Coming Soon
@@ -162,6 +162,6 @@ jupyter notebook
 
 ⭐ **Star this repo to follow along as new notebooks drop!** ⭐
 
-*Part of my Python learning series — built in public, one library at a time.*
+*Part of my Python learning series - built in public, one library at a time.*
 
 </div>
