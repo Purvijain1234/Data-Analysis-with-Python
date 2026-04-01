@@ -4,7 +4,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![NumPy](https://img.shields.io/badge/NumPy-Done-013243?style=for-the-badge&logo=numpy&logoColor=white)](#)
-[![Pandas](https://img.shields.io/badge/Pandas-Coming_Soon-150458?style=for-the-badge&logo=pandas&logoColor=white)](#)
+[![Pandas](https://img.shields.io/badge/Pandas-Done-150458?style=for-the-badge&logo=pandas&logoColor=white)](#)
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-Coming_Soon-11557c?style=for-the-badge)](#)
 [![Seaborn](https://img.shields.io/badge/Seaborn-Coming_Soon-4c72b0?style=for-the-badge)](#)
 
