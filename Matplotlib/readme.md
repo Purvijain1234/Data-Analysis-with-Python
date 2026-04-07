@@ -129,6 +129,9 @@ Topics:
 
 <!-- Add your histogram / distribution image below -->
 <!-- ![Histograms](images/histograms.png) -->
+<p align="center">
+  <img width="1078" height="447" alt="Image" src="https://github.com/user-attachments/assets/be776440-f915-461d-9eb6-4c6a92af05bd" />
+</p>
 
 ---
 
@@ -147,6 +150,9 @@ Topics:
 
 <!-- Add your pie / donut chart image below -->
 <!-- ![Pie Donut](images/pie_donut.png) -->
+<p align='center'>
+<img width="697" height="661" alt="Image" src="https://github.com/user-attachments/assets/505fae61-5be5-49ac-b9d5-42b7138ce685" />
+</p>
 
 ---
 
@@ -166,6 +172,9 @@ Topics:
 
 <!-- Add your customised chart image below -->
 <!-- ![Customisation](images/customisation.png) -->
+<p align='center'>
+<img width="1234" height="561" alt="Image" src="https://github.com/user-attachments/assets/9ea7fa64-e86a-482a-92c1-a5725a04b0d1" />
+</p>
 
 ---
 
@@ -185,6 +194,10 @@ Topics:
 
 <!-- Add your subplot grid image below -->
 <!-- ![Subplots](images/subplots.png) -->
+
+<p align='center'>
+  <img width="1263" height="734" alt="Image" src="https://github.com/user-attachments/assets/eb236a25-f5fd-4873-8b04-b00640857931" />
+</p>
 
 ---
 
