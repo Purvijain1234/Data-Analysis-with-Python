@@ -68,6 +68,9 @@ Topics:
 
 <!-- Add your line chart image below -->
 <!-- ![Line Chart](images/line_chart.png) -->
+<p align="center">
+<img width="1224" height="552" alt="Image" src="https://github.com/user-attachments/assets/759e7e5a-1c68-4725-bc87-0353714b021c" />
+</p>
 
 ---
 
@@ -86,7 +89,9 @@ Topics:
 
 <!-- Add your bar chart image below -->
 <!-- ![Bar Chart](images/bar_chart.png) -->
-
+<p align="center">
+<img width="1072" height="566" alt="Image" src="https://github.com/user-attachments/assets/8ddc9411-903e-4d08-b6f7-59e5f7cddcbd" />
+</p>
 ---
 
 ### `04` - Scatter Plots
@@ -104,7 +109,9 @@ Topics:
 
 <!-- Add your scatter plot image below -->
 <!-- ![Scatter Plot](images/scatter_plot.png) -->
-
+<p align="center">
+<img width="895" height="576" alt="Image" src="https://github.com/user-attachments/assets/7542dede-e0d0-41c3-8f8e-4a727d9d1472" />
+</p>
 ---
 
 ### `05` - Histograms & Distributions
