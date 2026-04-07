@@ -216,6 +216,9 @@ Topics:
 
 <!-- Add your styles comparison image below -->
 <!-- ![Styles](images/styles.png) -->
+<p align='center'>
+<img width="1047" height="441" alt="Image" src="https://github.com/user-attachments/assets/87c9a1af-dac0-4669-8d11-677e4cac647e" />
+</p>
 
 ---
 
@@ -234,6 +237,9 @@ Topics:
 
 <!-- Add your annotations image below -->
 <!-- ![Annotations](images/annotations.png) -->
+<p align='center'>
+  <img width="1255" height="572" alt="Image" src="https://github.com/user-attachments/assets/6255aa68-d6ba-4aa3-8787-a7cb7f78ad2f" />
+</p>
 
 ---
 
@@ -252,6 +258,10 @@ Topics:
 
 <!-- Add your Pandas plot image below -->
 <!-- ![Pandas Plot](images/pandas_plot.png) -->
+
+<p align='center'>
+  <img width="936" height="576" alt="Image" src="https://github.com/user-attachments/assets/25eb8dca-c4d8-48c4-957d-1a17da3d9725" />
+</p>
 
 ---
 
@@ -272,6 +282,10 @@ Topics:
 <!-- Add your heatmap image below -->
 <!-- ![Heatmap](images/heatmap.png) -->
 
+<p align='center'>
+  <img width="915" height="672" alt="Image" src="https://github.com/user-attachments/assets/2a28f9a2-ecb6-4e99-b5a2-c33dbed52b40" />
+</p>
+
 ---
 
 ### `13` - Twin Axes & Dual Y-Axis
@@ -289,6 +303,10 @@ Topics:
 
 <!-- Add your dual Y-axis chart image below -->
 <!-- ![Twin Axes](images/twin_axes.png) -->
+
+<p align='center'>
+  <img width="1248" height="565" alt="Image" src="https://github.com/user-attachments/assets/4e5449b0-0dbc-4f0b-bdc0-6856536725d9" />
+</p>
 
 ---
 
@@ -343,6 +361,10 @@ A complete 9-chart visual dashboard built using `plt.subplot()` - pure pyplot st
 
 <!-- Add your full dashboard image below -->
 <!-- ![Student Dashboard](images/student_dashboard.png) -->
+
+<p align='center'>
+  <img width="832" height="785" alt="Image" src="https://github.com/user-attachments/assets/1b70bf7c-4675-42f6-9486-4a25cb89262a" />
+</p>
 
 ---
 
