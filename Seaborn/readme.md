@@ -249,7 +249,7 @@ Topics:
 ```
 
 <p align="center">
-
+<img width="716" height="645" alt="Image" src="https://github.com/user-attachments/assets/46b984d6-f1c3-4394-9aec-d5827f01be2b" />
 </p>
 
 ---
@@ -278,15 +278,18 @@ Topics:
 ✅ Real example: Iris correlation, tips by day & gender
 ```
 
+<p align="center">
+<img width="564" height="547" alt="Image" src="https://github.com/user-attachments/assets/f1850c90-c638-4298-ac10-32bd15f8ae50" />
+</p>
+
 ---
 
-### `10` - Rug Plots & Advanced Styling
+### `09` -Advanced Styling & Customization
 
 Fine-tune your visualizations.
 
 ```
 Topics:
-✅ Rug plots - individual points on axis
 ✅ Global styling:
   • sns.set_theme()
   • sns.set_palette()
@@ -353,12 +356,41 @@ Step 6: Insights & Conclusions
 | Consistency | Each species shows consistent patterns within itself |
 | Classification Potential | Physical measurements alone can reliably identify species |
 
-**Charts Used in Capstone:**
-1. Distribution plots (univariate)
-2. Relational plots with hue (bivariate)
-3. Categorical plots - violin (distribution by group)
-4. PairPlot (multivariate)
-5. Heatmap (correlation)
+<!-- <p align="center">
+<img width="700" height="301" alt="Image" src="https://github.com/user-attachments/assets/2a0ccd61-074d-4660-8860-9e935065384d" />
+</p>
+
+
+<p align="center">
+<img width="502" height="306" alt="Image" src="https://github.com/user-attachments/assets/ba8af4d2-e2d6-4e22-9c68-454691846d8a" />
+</p>
+
+<p align="center">
+<img width="723" height="628" alt="Image" src="https://github.com/user-attachments/assets/368a9605-cfe0-4cac-bc5a-24a977dfda26" />
+</p> -->
+
+
+<table align="center">
+<tr>
+<td align="center">
+<img src="https://github.com/user-attachments/assets/2a0ccd61-074d-4660-8860-9e935065384d" width="450">
+</td>
+
+<td align="center">
+<img src="https://github.com/user-attachments/assets/ba8af4d2-e2d6-4e22-9c68-454691846d8a" width="450">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<img src="https://github.com/user-attachments/assets/368a9605-cfe0-4cac-bc5a-24a977dfda26" width="450">
+</td>
+
+<td align="center">
+<img src="https://github.com/user-attachments/assets/9c41e221-f9e4-4da1-b47d-763845808ac0" width="450">
+</td>
+</tr>
+</table>
 
 ---
 
@@ -425,48 +457,6 @@ Then open any notebook (01 through 11) and run the cells sequentially.
 
 ---
 
-## 📖 Learning Path
-
-**Beginner (Sections 1-3):**
-- Understand Seaborn's philosophy
-- Master styling and themes
-- Create first relational plots
-
-**Intermediate (Sections 4-6):**
-- All categorical plot types
-- Distribution analysis
-- Understanding distributions in data
-
-**Advanced (Sections 7-10):**
-- Regression analysis
-- Multi-plot grids
-- Correlation analysis
-- Professional styling
-
-**Mastery (Section 11):**
-- Complete EDA workflow
-- Combine all techniques
-- Real-world data analysis
-
----
-
-## 🎯 What You'll Learn
-
-By the end of this course, you'll be able to:
-
-✅ Create 20+ different plot types with Seaborn  
-✅ Use figure-level functions effectively  
-✅ Understand when to use each plot type  
-✅ Perform complete exploratory data analysis  
-✅ Style charts professionally  
-✅ Handle multi-dimensional data visualization  
-✅ Extract insights from data visually  
-✅ Create publication-ready figures  
-✅ Work with real datasets (Penguins, Tips, Iris, Diamonds, etc.)  
-✅ Apply the EDA workflow to any dataset  
-
----
-
 ## 📊 Seaborn vs Matplotlib
 
 | Feature | Seaborn | Matplotlib |
@@ -509,19 +499,6 @@ By the end of this course, you'll be able to:
 
 ---
 
-## 📌 Important Notes
-
-1. **No Matplotlib Required:** This course uses ONLY Seaborn functions. No `plt.` commands (except `plt.show()` which Seaborn handles).
-
-2. **Datasets Loaded Automatically:** All datasets use `sns.load_dataset()` - they're downloaded from the internet, no files needed.
-
-3. **Figure-level Focus:** We use `relplot()`, `catplot()`, `displot()` (which create entire figures) rather than axes-level functions.
-
-4. **Interactive Learning:** Each notebook has explanations, code, and outputs. Run cells sequentially for best understanding.
-
-5. **Real-world Practice:** The capstone uses a real dataset (Antarctic Penguins) with complete EDA workflow.
-
----
 
 ## 🤝 Contributing
 
@@ -549,20 +526,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🔗 Resources
-
-**Official Documentation:**
-- 📚 [Seaborn Official](https://seaborn.pydata.org)
-- 📚 [Seaborn Gallery](https://seaborn.pydata.org/examples.html)
-- 📚 [Seaborn API Reference](https://seaborn.pydata.org/api.html)
-
-**Related Courses:**
-- 🎓 [Matplotlib Complete Course](https://github.com/user/matplotlib-course)
-- 🎓 [Pandas Data Analysis](https://github.com/user/pandas-course)
-- 🎓 [Data Science Fundamentals](https://github.com/user/data-science-course)
-
----
-
 ## ⭐ Support This Project
 
 If this course helped you learn Seaborn:
@@ -575,14 +538,6 @@ If this course helped you learn Seaborn:
 ---
 
 <div align="center">
-
-### 🎉 Ready to Master Seaborn?
-
-**[Start with Section 01 →](https://github.com/user/seaborn-mastery/blob/main/Notebooks/01-introduction-dataset-loading.ipynb)**
-
-*Beautiful data visualization is just a few lines of code away!*
-
----
 
 ⭐ **Star this repo if it helps you!** ⭐
 
