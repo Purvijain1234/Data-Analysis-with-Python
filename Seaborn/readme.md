@@ -15,32 +15,19 @@
 Seaborn-Complete-Mastery/
 │
 ├── 📓 Notebooks/
-│   ├── 01-introduction-dataset-loading.ipynb
-│   ├── 02-styling-themes-palettes.ipynb
-│   ├── 03-relational-plots.ipynb
-│   ├── 04-categorical-plots-part1.ipynb
-│   ├── 05-categorical-plots-part2.ipynb
-│   ├── 06-distribution-plots.ipynb
-│   ├── 07-regression-joint-plots.ipynb
-│   ├── 08-multi-plot-grids.ipynb
-│   ├── 09-heatmaps-correlation.ipynb
-│   ├── 10-rug-plots-advanced-styling.ipynb
-│   └── 11-capstone-complete-eda.ipynb
+│   ├── 01-Introduction to Seaborn.ipynb
+│   ├── 02-Themes, Styles & Color Palettes.ipynb
+│   ├── 03-Relational Plots.ipynb
+│   ├── 04-Categorical Plots.ipynb
+│   ├── 05-Distribution Plots.ipynb
+│   ├── 06-Regression Plots.ipynb
+│   ├── 07-Multi-plot Grids.ipynb
+│   ├── 08-Heatmaps & correlation.ipynb
+│   ├── 09-Advanced Styling & Customization.ipynb
+│   ├── 10-Capstone Penguin.ipynb
+│   └── 11-Capstone Iris.ipynb
 │
-├── 📂 Data/
-│   └── (Seaborn loads datasets from internet - no files needed)
-│
-├── 🖼️ Images/
-│   ├── scatter-plot.png
-│   ├── categorical-plots.png
-│   ├── distribution-plots.png
-│   ├── heatmap.png
-│   ├── pairplot.png
-│   └── capstone-dashboard.png
-│
-├── 📝 README.md (this file)
-├── 🔧 requirements.txt
-└── 📄 LICENSE
+└── README.md 
 ```
 
 ---
@@ -87,8 +74,13 @@ Topics:
 ✅ sns.color_palette() - create custom palettes
 ```
 
-**Visual Example:**
-All 5 themes side-by-side, showing how the same data looks completely different.
+<p align="center">
+<img width="896" height="603" alt="Image" src="https://github.com/user-attachments/assets/16e01545-d6a6-4c13-bb2c-9c2530881f67" />
+</p>
+
+<p align="center">
+  <img width="841" height="348" alt="Image" src="https://github.com/user-attachments/assets/87860970-867a-442e-99fb-90f552d62ac0" />
+</p>
 
 ---
 
@@ -122,6 +114,10 @@ sns.relplot(
     aspect=1.3
 )
 ```
+
+<p align="center">
+  <img width="1134" height="275" alt="Image" src="https://github.com/user-attachments/assets/2ca9b27d-60d7-4f88-90cd-4f37f4d6f991" />
+</p>
 
 ---
 
