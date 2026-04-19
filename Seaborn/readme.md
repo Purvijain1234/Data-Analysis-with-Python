@@ -75,10 +75,6 @@ Topics:
 ```
 
 <p align="center">
-<img width="896" height="603" alt="Image" src="https://github.com/user-attachments/assets/16e01545-d6a6-4c13-bb2c-9c2530881f67" />
-</p>
-
-<p align="center">
   <img width="841" height="348" alt="Image" src="https://github.com/user-attachments/assets/87860970-867a-442e-99fb-90f552d62ac0" />
 </p>
 
@@ -121,7 +117,7 @@ sns.relplot(
 
 ---
 
-### `04` - Categorical Plots - Part 1 (Bar, Count, Strip, Swarm)
+### `04` - Categorical Plots - (Bar, Box, Violin, Point)
 
 Compare values across categories using point-based plots.
 
@@ -137,41 +133,22 @@ Topics:
 ✅ Strip plot - kind='strip'
   • All individual points (with jitter)
   • See full distribution
-✅ Swarm plot - kind='swarm'
-  • Non-overlapping points (bee swarm)
-  • Clear individual point view
-✅ Adding hue for grouped comparison
-✅ Real example: Tips by day, gender, meal type
-```
-
----
-
-### `05` - Categorical Plots - Part 2 (Box, Violin, Point)
-
-Show distributions within categories.
-
-```
-Topics:
 ✅ Box plot - kind='box'
   • Median, quartiles, outliers
   • 5-number summary
 ✅ Violin plot - kind='violin'
   • Full probability distribution
   • Beautiful and informative
-✅ Point plot - kind='point'
-  • Connected means with confidence intervals
-  • Great for trends across categories
-✅ split=True - split violins by hue
-✅ Combining multiple plot types
-✅ Real example: Bill & tip distributions by day and gender
+✅ Real example: Tips by day, gender, meal type
 ```
 
-**Visual Example:**
-Same data shown as box, violin, and point plots - see why each reveals different insights.
+<p align="center">
+  <img width="1120" height="680" alt="Image" src="https://github.com/user-attachments/assets/5b2cc21e-e482-487b-998d-6e18f6b687d8" />
+</p>
 
 ---
 
-### `06` - Distribution Plots (Histogram, KDE, ECDF, Rug)
+### `05` - Distribution Plots (Histogram, KDE, ECDF, Rug)
 
 Understand how a single variable is distributed.
 
@@ -193,9 +170,13 @@ Topics:
 ✅ Real example: Bill amount distribution by gender
 ```
 
+<p align="center">
+  <img width="1082" height="724" alt="Image" src="https://github.com/user-attachments/assets/20f52e4e-9bed-4760-ae50-ff93a8ee80ad" />
+</p>
+
 ---
 
-### `07` - Regression & Joint Plots
+### `06` - Regression & Joint Plots
 
 Show trends and relationships with fitting.
 
@@ -221,12 +202,31 @@ Topics:
 ✅ Real example: Bill vs tip, diamonds carat vs price
 ```
 
-**Visual Example:**
-Same data as scatter plot, linear regression, polynomial, and joint plot - understand when to use each.
+
+<!-- <p align="center">
+  <img width="587" height="384" alt="Image" src="https://github.com/user-attachments/assets/fc4c1d5a-17f7-4c2c-a004-5b3c90479a5e" />
+</p>
+
+
+<p align="center">
+  <img width="460" height="458" alt="Image" src="https://github.com/user-attachments/assets/4b72d35d-65a5-4276-ad3c-ea1fbd0be29e" />
+</p> -->
+
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/fc4c1d5a-17f7-4c2c-a004-5b3c90479a5e" width="400">
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/4b72d35d-65a5-4276-ad3c-ea1fbd0be29e" width="400">
+    </td>
+  </tr>
+</table>
 
 ---
 
-### `08` - Multi-plot Grids (PairGrid & PairPlot)
+### `07` - Multi-plot Grids (PairGrid & PairPlot)
 
 See all relationships at once!
 
@@ -248,12 +248,13 @@ Topics:
 ✅ Real example: Iris flowers - all features vs all features
 ```
 
-**Visual Example:**
-PairPlot of iris dataset showing how 4 variables relate to each other across 3 species.
+<p align="center">
+
+</p>
 
 ---
 
-### `09` - Heatmaps & Correlation Analysis
+### `08` - Heatmaps & Correlation Analysis
 
 Encode 2D data as colors in a grid.
 
