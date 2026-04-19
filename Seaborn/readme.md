@@ -1,1 +1,594 @@
+# 📊 Seaborn - Complete Data Visualization Course
 
+> A structured, beginner-to-advanced Seaborn learning series built as an interactive Jupyter Notebook - **pure seaborn only** (no matplotlib), with a comprehensive exploratory data analysis capstone project.
+
+[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Seaborn](https://img.shields.io/badge/Seaborn-0.12+-66A6FF?style=for-the-badge)](https://seaborn.pydata.org)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+
+---
+
+## 🗂️ Repository Structure
+
+```
+Seaborn-Complete-Mastery/
+│
+├── 📓 Notebooks/
+│   ├── 01-introduction-dataset-loading.ipynb
+│   ├── 02-styling-themes-palettes.ipynb
+│   ├── 03-relational-plots.ipynb
+│   ├── 04-categorical-plots-part1.ipynb
+│   ├── 05-categorical-plots-part2.ipynb
+│   ├── 06-distribution-plots.ipynb
+│   ├── 07-regression-joint-plots.ipynb
+│   ├── 08-multi-plot-grids.ipynb
+│   ├── 09-heatmaps-correlation.ipynb
+│   ├── 10-rug-plots-advanced-styling.ipynb
+│   └── 11-capstone-complete-eda.ipynb
+│
+├── 📂 Data/
+│   └── (Seaborn loads datasets from internet - no files needed)
+│
+├── 🖼️ Images/
+│   ├── scatter-plot.png
+│   ├── categorical-plots.png
+│   ├── distribution-plots.png
+│   ├── heatmap.png
+│   ├── pairplot.png
+│   └── capstone-dashboard.png
+│
+├── 📝 README.md (this file)
+├── 🔧 requirements.txt
+└── 📄 LICENSE
+```
+
+---
+
+## 📚 Course Contents
+
+### `01` - Introduction & Dataset Loading
+
+What is Seaborn and why use it over Matplotlib.
+
+```
+Topics:
+✅ What is Seaborn and why it matters
+✅ Beautiful by default - Seaborn's philosophy
+✅ Figure-level vs Axes-level functions
+✅ 7 Built-in Datasets (tips, iris, penguins, diamonds, flights, titanic, planets)
+✅ Why only Seaborn? (no matplotlib complexity)
+✅ The power of sns.load_dataset()
+```
+
+---
+
+### `02` - Styling, Themes & Color Palettes
+
+Change the entire look with one function.
+
+```
+Topics:
+✅ sns.set_theme() - 5 built-in themes
+  • darkgrid (default) - dark with grid
+  • whitegrid - white with grid
+  • dark - dark, no grid
+  • white - minimal, clean
+  • ticks - white with axis ticks
+✅ sns.set_context() - 4 scaling contexts
+  • paper - smallest (publications)
+  • notebook - default (Jupyter)
+  • talk - larger (presentations)
+  • poster - largest (posters)
+✅ Color Palettes (18 different palettes)
+  • Categorical: deep, muted, pastel, bright, dark, colorblind
+  • Sequential: Blues, Reds, Greens, YlOrRd, viridis, plasma
+  • Diverging: coolwarm, RdBu, RdYlGn, icefire, vlag
+✅ sns.color_palette() - create custom palettes
+```
+
+**Visual Example:**
+All 5 themes side-by-side, showing how the same data looks completely different.
+
+---
+
+### `03` - Relational Plots (Scatter & Line)
+
+Show relationships between continuous variables.
+
+```
+Topics:
+✅ sns.relplot() - Figure-level (creates entire figure)
+✅ Basic scatter: x, y variables
+✅ Multi-dimensional scatter with:
+  • hue - color by category
+  • size - point size by numeric value
+  • style - marker shape by category
+✅ Line plots - kind='line'
+✅ Subplots with col and row parameters
+✅ Real example: Restaurant bill vs tip by gender & day
+```
+
+**Key Function:**
+```python
+sns.relplot(
+    data=tips,
+    x='total_bill',
+    y='tip',
+    hue='sex',           # Color by gender
+    size='party_size',   # Size by party
+    col='day',           # Separate by day
+    height=5,
+    aspect=1.3
+)
+```
+
+---
+
+### `04` - Categorical Plots - Part 1 (Bar, Count, Strip, Swarm)
+
+Compare values across categories using point-based plots.
+
+```
+Topics:
+✅ sns.catplot() - Figure-level categorical plots
+✅ Bar plot - kind='bar'
+  • Shows mean with confidence interval
+  • Best for comparing averages
+✅ Count plot - kind='count'
+  • Frequency of each category
+  • See sample sizes
+✅ Strip plot - kind='strip'
+  • All individual points (with jitter)
+  • See full distribution
+✅ Swarm plot - kind='swarm'
+  • Non-overlapping points (bee swarm)
+  • Clear individual point view
+✅ Adding hue for grouped comparison
+✅ Real example: Tips by day, gender, meal type
+```
+
+---
+
+### `05` - Categorical Plots - Part 2 (Box, Violin, Point)
+
+Show distributions within categories.
+
+```
+Topics:
+✅ Box plot - kind='box'
+  • Median, quartiles, outliers
+  • 5-number summary
+✅ Violin plot - kind='violin'
+  • Full probability distribution
+  • Beautiful and informative
+✅ Point plot - kind='point'
+  • Connected means with confidence intervals
+  • Great for trends across categories
+✅ split=True - split violins by hue
+✅ Combining multiple plot types
+✅ Real example: Bill & tip distributions by day and gender
+```
+
+**Visual Example:**
+Same data shown as box, violin, and point plots - see why each reveals different insights.
+
+---
+
+### `06` - Distribution Plots (Histogram, KDE, ECDF, Rug)
+
+Understand how a single variable is distributed.
+
+```
+Topics:
+✅ sns.displot() - Figure-level distribution plots
+✅ Histogram - kind='hist'
+  • Bars showing frequency in bins
+  • kde=True adds smooth curve
+✅ KDE (Kernel Density Estimation) - kind='kde'
+  • Smooth probability density curve
+  • Professional and elegant
+✅ ECDF (Empirical Cumulative Distribution) - kind='ecdf'
+  • Cumulative percentage
+  • Great for comparing groups
+✅ Rug plots - individual data points on axis
+✅ Multi-group comparison with hue
+✅ Create subplots with col and row
+✅ Real example: Bill amount distribution by gender
+```
+
+---
+
+### `07` - Regression & Joint Plots
+
+Show trends and relationships with fitting.
+
+```
+Topics:
+✅ sns.lmplot() - Figure-level regression
+  • Scatter with regression line
+  • Confidence band (shaded area)
+  • Separate lines by hue
+✅ Polynomial regression - order parameter
+  • order=1 (linear)
+  • order=2 (quadratic)
+  • order=3 (cubic)
+✅ sns.jointplot() - Bivariate + marginals
+  • Center: scatter/regression/KDE
+  • Top: X distribution
+  • Right: Y distribution
+✅ Joint plot types:
+  • scatter - points only
+  • reg - with regression line
+  • kde - smooth density
+  • hex - heatmap for dense data
+✅ Real example: Bill vs tip, diamonds carat vs price
+```
+
+**Visual Example:**
+Same data as scatter plot, linear regression, polynomial, and joint plot - understand when to use each.
+
+---
+
+### `08` - Multi-plot Grids (PairGrid & PairPlot)
+
+See all relationships at once!
+
+```
+Topics:
+✅ sns.pairplot() - Automatic scatter matrix
+  • Diagonal: univariate distributions
+  • Off-diagonal: bivariate relationships
+  • Perfect for EDA!
+✅ Color by hue parameter
+✅ Different diagonal kinds:
+  • hist - histogram
+  • kde - smooth curve
+  • auto - choose automatically
+✅ sns.PairGrid() - Custom version
+  • map_diag() - diagonal plots
+  • map_upper() - upper triangle
+  • map_lower() - lower triangle
+✅ Real example: Iris flowers - all features vs all features
+```
+
+**Visual Example:**
+PairPlot of iris dataset showing how 4 variables relate to each other across 3 species.
+
+---
+
+### `09` - Heatmaps & Correlation Analysis
+
+Encode 2D data as colors in a grid.
+
+```
+Topics:
+✅ sns.heatmap() - 2D grid with colors
+  • annot=True - show values
+  • cmap - color palette
+  • center - center value for diverging palettes
+  • linewidths - cell borders
+✅ Correlation matrices
+  • Pearson correlation (r = -1 to +1)
+  • Blue: negative, Red: positive
+✅ Pivot tables as heatmaps
+  • Aggregated data in grid
+  • Day × Gender average tips
+✅ sns.clustermap() - With hierarchical clustering
+  • Reorders rows and columns by similarity
+  • Shows dendrogram (clustering tree)
+  • Reveals natural groupings
+✅ Real example: Iris correlation, tips by day & gender
+```
+
+---
+
+### `10` - Rug Plots & Advanced Styling
+
+Fine-tune your visualizations.
+
+```
+Topics:
+✅ Rug plots - individual points on axis
+✅ Global styling:
+  • sns.set_theme()
+  • sns.set_palette()
+  • sns.set_context()
+✅ Multiple encoding dimensions:
+  • hue - color
+  • size - point size
+  • style - marker shape
+  • col/row - subplots
+✅ Alpha transparency
+✅ Edge colors and line widths
+✅ Custom legends and positioning
+✅ Real example: Complex multi-dimensional scatter
+```
+
+---
+
+### 🏆 Capstone Project - Complete EDA (Exploratory Data Analysis)
+
+A comprehensive analysis of Antarctic Penguins dataset using **all Seaborn techniques**.
+
+**Project Structure:**
+
+```
+Step 1: Dataset Exploration
+├── Load penguins dataset (344 observations)
+├── Examine shape, dtypes, missing values
+└── Basic statistics
+
+Step 2: Univariate Analysis (Individual Variables)
+├── Bill length distribution
+├── Flipper length distribution
+├── Body mass distribution
+└── By species (separate distributions)
+
+Step 3: Bivariate Analysis (Pairs of Variables)
+├── Bill length vs Flipper length (by species)
+├── Bill depth vs Body mass (by species)
+├── Mass distribution by species (violin plot)
+└── Species separation analysis
+
+Step 4: Multivariate Analysis (All Variables)
+└── PairPlot - see all 6 relationships at once!
+
+Step 5: Correlation Analysis
+├── Correlation matrix heatmap
+├── Identify strongest relationships
+└── Understand variable interdependencies
+
+Step 6: Insights & Conclusions
+├── Three species are clearly distinct
+├── Strong correlations within species
+├── Flipper length & body mass highly correlated
+└── Physical measurements can classify species
+```
+
+**Key Findings:**
+
+| Finding | Insight |
+|---------|---------|
+| Species Separation | Adelie, Chinstrap, Gentoo occupy different measurement spaces |
+| Strongest Correlation | Flipper length ↔ Body mass (r=0.87) |
+| Negative Correlation | Bill length ↔ Bill depth (r=-0.24) - inverse relationship |
+| Consistency | Each species shows consistent patterns within itself |
+| Classification Potential | Physical measurements alone can reliably identify species |
+
+**Charts Used in Capstone:**
+1. Distribution plots (univariate)
+2. Relational plots with hue (bivariate)
+3. Categorical plots - violin (distribution by group)
+4. PairPlot (multivariate)
+5. Heatmap (correlation)
+
+---
+
+## 📊 Plot Selection Guide
+
+```
+Relationship between 2 continuous variables     → relplot(kind='scatter')
+Trend over time / continuous relationship       → relplot(kind='line')
+Compare values across categories                → catplot(kind='bar')
+Show distribution within categories             → catplot(kind='box/violin')
+Individual points in categories                 → catplot(kind='strip/swarm')
+Distribution of single variable                 → displot(kind='hist/kde/ecdf')
+Trend with fitting line                         → lmplot()
+Bivariate + marginal distributions             → jointplot()
+All variable relationships at once             → pairplot()
+2D numerical data (correlation)                → heatmap()
+Multi-panel complex analysis                   → catplot/relplot with col/row
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Python 3.8+
+- Jupyter Notebook or JupyterLab
+- Basic pandas knowledge
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/YourUsername/Seaborn-Complete-Mastery.git
+cd Seaborn-Complete-Mastery
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### requirements.txt
+
+```
+jupyter>=1.0.0
+seaborn>=0.12.0
+pandas>=1.3.0
+numpy>=1.21.0
+matplotlib>=3.4.0
+```
+
+### Running the Notebooks
+
+```bash
+# Start Jupyter
+jupyter notebook
+
+# Or use JupyterLab
+jupyter lab
+```
+
+Then open any notebook (01 through 11) and run the cells sequentially.
+
+> 💡 **Pro Tip:** All datasets are loaded from Seaborn's online repository - no local files needed. Just run `sns.load_dataset('name')` and it downloads automatically!
+
+---
+
+## 📖 Learning Path
+
+**Beginner (Sections 1-3):**
+- Understand Seaborn's philosophy
+- Master styling and themes
+- Create first relational plots
+
+**Intermediate (Sections 4-6):**
+- All categorical plot types
+- Distribution analysis
+- Understanding distributions in data
+
+**Advanced (Sections 7-10):**
+- Regression analysis
+- Multi-plot grids
+- Correlation analysis
+- Professional styling
+
+**Mastery (Section 11):**
+- Complete EDA workflow
+- Combine all techniques
+- Real-world data analysis
+
+---
+
+## 🎯 What You'll Learn
+
+By the end of this course, you'll be able to:
+
+✅ Create 20+ different plot types with Seaborn  
+✅ Use figure-level functions effectively  
+✅ Understand when to use each plot type  
+✅ Perform complete exploratory data analysis  
+✅ Style charts professionally  
+✅ Handle multi-dimensional data visualization  
+✅ Extract insights from data visually  
+✅ Create publication-ready figures  
+✅ Work with real datasets (Penguins, Tips, Iris, Diamonds, etc.)  
+✅ Apply the EDA workflow to any dataset  
+
+---
+
+## 📊 Seaborn vs Matplotlib
+
+| Feature | Seaborn | Matplotlib |
+|---------|---------|-----------|
+| **Learning Curve** | Gentle (high-level) | Steep (low-level) |
+| **Code Length** | Brief (2-3 lines) | Verbose (10+ lines) |
+| **Default Styling** | Beautiful | Plain |
+| **Data Integration** | Direct (DataFrames) | Manual preprocessing |
+| **Statistical Features** | Built-in (confidence intervals) | Manual calculation |
+| **Best For** | Exploratory analysis & reports | Fine-grained customization |
+| **Multi-panel Plots** | Automatic (relplot, catplot) | Manual (subplots) |
+
+**Bottom Line:** Seaborn = Quick EDA | Matplotlib = Complete Control
+
+---
+
+## 💡 Key Concepts
+
+### Figure-level Functions (What We Use!)
+- `relplot()` - Relational plots with automatic subplots
+- `catplot()` - Categorical plots with automatic subplots
+- `displot()` - Distribution plots with automatic subplots
+- `lmplot()` - Regression plots with automatic subplots
+- `pairplot()` - Scatter matrix of all variables
+- `jointplot()` - Bivariate + marginal distributions
+- `clustermap()` - Heatmap with hierarchical clustering
+
+### Encoding Dimensions
+- **hue** - Color (categorical)
+- **size** - Point size (numeric)
+- **style** - Marker shape (categorical)
+- **col/row** - Subplots (categorical)
+
+### Why Only Seaborn?
+- Simpler syntax
+- Beautiful by default
+- Perfect for exploratory analysis
+- What professionals use for EDA
+- Focus on data, not plotting mechanics
+
+---
+
+## 📌 Important Notes
+
+1. **No Matplotlib Required:** This course uses ONLY Seaborn functions. No `plt.` commands (except `plt.show()` which Seaborn handles).
+
+2. **Datasets Loaded Automatically:** All datasets use `sns.load_dataset()` - they're downloaded from the internet, no files needed.
+
+3. **Figure-level Focus:** We use `relplot()`, `catplot()`, `displot()` (which create entire figures) rather than axes-level functions.
+
+4. **Interactive Learning:** Each notebook has explanations, code, and outputs. Run cells sequentially for best understanding.
+
+5. **Real-world Practice:** The capstone uses a real dataset (Antarctic Penguins) with complete EDA workflow.
+
+---
+
+## 🤝 Contributing
+
+Contributions welcome! Feel free to:
+- Report bugs or issues
+- Suggest improvements
+- Add additional examples
+- Improve documentation
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 👨‍💼 Author
+
+**Your Name / Organization**
+
+- 📧 Email: your.email@example.com
+- 💼 LinkedIn: [Your LinkedIn]
+- 🐙 GitHub: [@YourGitHub]
+
+---
+
+## 🔗 Resources
+
+**Official Documentation:**
+- 📚 [Seaborn Official](https://seaborn.pydata.org)
+- 📚 [Seaborn Gallery](https://seaborn.pydata.org/examples.html)
+- 📚 [Seaborn API Reference](https://seaborn.pydata.org/api.html)
+
+**Related Courses:**
+- 🎓 [Matplotlib Complete Course](https://github.com/user/matplotlib-course)
+- 🎓 [Pandas Data Analysis](https://github.com/user/pandas-course)
+- 🎓 [Data Science Fundamentals](https://github.com/user/data-science-course)
+
+---
+
+## ⭐ Support This Project
+
+If this course helped you learn Seaborn:
+
+1. ⭐ **Star this repository** on GitHub
+2. 🔖 **Bookmark** for future reference
+3. 📤 **Share** with others learning data visualization
+4. 💬 **Give feedback** - what could be better?
+
+---
+
+<div align="center">
+
+### 🎉 Ready to Master Seaborn?
+
+**[Start with Section 01 →](https://github.com/user/seaborn-mastery/blob/main/Notebooks/01-introduction-dataset-loading.ipynb)**
+
+*Beautiful data visualization is just a few lines of code away!*
+
+---
+
+⭐ **Star this repo if it helps you!** ⭐
+
+*Part of the [Data Analysis with Python](https://github.com/user/data-analysis-python) series*
+
+</div>
